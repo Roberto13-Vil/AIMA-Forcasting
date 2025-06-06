@@ -31,4 +31,5 @@ The dataset used is publicly available and contains [describe dataset briefly, e
 To run this project, you need Python 3.x and the following libraries:
 
 ```bash
-pip install numpy pandas matplotlib statsmodels pmdarima
+pip install -r requirements.txt
+
