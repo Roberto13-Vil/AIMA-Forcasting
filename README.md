@@ -19,10 +19,22 @@ In this project, we will:
 
 ## Dataset
 
-The dataset used is publicly available and contains [describe dataset briefly, e.g., monthly airline passengers from 1949 to 1960].
+The dataset used is publicly available and contains [describe dataset briefly, e.g., monthly airline passengers from **2005-01-01** to **2024-12-31**].
 
-- Source: [NOAA / Kaggle / AirPassengers Dataset / link to dataset]
-- Format: CSV file with time series data indexed by date.
+- Source: [NOAA]
+- Format: API JSON
+- Columns: `date`, `AverageTemperature`
+```
+- Date Range: **2005-01-01** to **2024-12-31**
+```
+- Frequency: Monthly
+```
+- Data Source: [NOAA API](https://www.ncdc.noaa.gov/cdo-web/webservices/v2)
+```
+- Data Format: JSON
+```
+- Data Columns: `date`, `AverageTemperature`
+```
 
 ---
 
