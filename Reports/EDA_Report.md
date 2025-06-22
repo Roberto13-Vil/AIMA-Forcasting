@@ -22,7 +22,7 @@ This report analyzes the dataset from NOAA for station **GHCND:MXM00076679** fro
 
 ## Levene's Test (Variance Homogeneity)
 
-- Statistic: **0.043**
+- Statistic: **0.044**
 - p-value: **1.0**
 
 
