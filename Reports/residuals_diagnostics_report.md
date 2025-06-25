@@ -67,7 +67,7 @@
 | SARIMA_(1,1,1)_(0,1,1) | ✅ None  |         2.82  |         3.366 |              4 |
 | SARIMA_(1,1,1)_(1,1,1) | ✅ None  |         2.897 |         3.366 |              4 |
 
-![Boxplot Outliers](../Outputs/Figures/residuals_boxplot)
+![Boxplot Outliers](../Outputs/Figures/residuals_boxplot.png)
 
 ---
 *Generated with Python & Statsmodels. Analyst: Your Name.*
