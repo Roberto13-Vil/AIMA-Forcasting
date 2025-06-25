@@ -70,4 +70,4 @@
 ![Boxplot Outliers](../Outputs/Figures/residuals_boxplot.png)
 
 ---
-*Generated with Python & Statsmodels. Analyst: Your Name.*
+*Generated with Python & Statsmodels. Analyst: Roberto Vilchis.*

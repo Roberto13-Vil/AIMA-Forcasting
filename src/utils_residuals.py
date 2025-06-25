@@ -677,4 +677,4 @@ def generate_residual_diagnostics_report(
         f.write(f"\n\n![Boxplot Outliers]({image_paths['boxplot_outliers']})\n\n")
 
         f.write("---\n")
-        f.write("*Generated with Python & Statsmodels. Analyst: Your Name.*\n")
+        f.write("*Generated with Python & Statsmodels. Analyst: Roberto Vilchis.*\n")
