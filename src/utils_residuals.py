@@ -11,6 +11,7 @@ import scipy.stats as stats
 from scipy.stats import ttest_1samp, anderson
 import math
 from scipy.stats import t
+from statsmodels.tsa.statespace.sarimax import SARIMAXResults
 
 theme = 'seaborn-v0_8-dark-palette'
 fig_facecolor = "#333333"
@@ -103,6 +104,26 @@ def fit_sarima_models(
         results[name] = fitted_model
 
     return results
+
+def save_models(
+    results: dict[str, any],
+    output_dir: str = "../Outputs/Models"
+):
+    """
+    Saves each SARIMA model in a specified directory.
+
+    Parameters:
+        results (dict): Dictionary of model name → fitted SARIMAX object.
+        output_dir (str): Base path to save models. Default is "../Outputs/Models".
+    """
+    import os
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    for name, result in results.items():
+        filename = name.replace(":", "_").replace("(", "").replace(")", "").replace(",", "-").replace(" ", "_")
+        model_path = os.path.join(output_dir, f"{filename}.pkl")
+        result.save(model_path)
 
 def residual_mean_test(
     residuals: dict[str, pd.Series],
